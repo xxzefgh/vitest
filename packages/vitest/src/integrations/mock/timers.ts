@@ -178,6 +178,7 @@ export class FakeTimers {
         now: Date.now(),
         ...this._userConfig,
         toFake: existingFakedMethods,
+        ignoreMissingTimers: true,
       })
 
       this._fakingTime = true
